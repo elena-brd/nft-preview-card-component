@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --primary-soft-blue-color: hsl(215, 51%, 70%);
+    --primary-cyan-color: hsl(178, 100%, 50%);
+
+
+    --neutral-very-dark-blue-color-bg: hsl(217, 54%, 11%);
+    --neutral-very-dark-blue-color-card-bg: hsl(216, 50%, 16%);
+    --neutral-very-dark-blue-color-line: hsl(215, 32%, 27%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--neutral-very-dark-blue-color-bg);
+    color: var(--neutral-white);
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+}
+
+.card {
+    background: var(--neutral-very-dark-blue-color-card-bg);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.main-card #equilibrium {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#equilibrium:hover {
+    cursor: pointer;
+    border: 2px solid var(--primary-cyan-color);
+}
+
+.main-card #avatar {
+    width: 30px;
+    border: 1px solid var(--neutral-white);
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 9px;
+    padding: 15px 0;
+}
+
+.title:hover {
+    color: var(--primary-cyan-color);
+    cursor: pointer;
+}
+
+.about {
+    color: var(--primary-soft-blue-color);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.info-item {
+    padding: 15px 0;
+    display: flex;
+    font-size: 13px;
+}
+
+.info-item img {
+    margin-right: 5px;
+}
+
+.eth {
+    margin-right: 100px;
+    color: var(--primary-cyan-color);
+}
+
+.remaining {
+    color: var(--primary-soft-blue-color);
+}
+
+.author {
+    border-top: var(--neutral-very-dark-blue-color-line) solid 2px;
+    display: flex;
+}
+
+.author {
+    padding: 15px 0 5px;
+    font-size: 13px;
+    color: var(--primary-soft-blue-color);
+}
+
+.author img {
+    margin-right: 20px;
+}
+
+.author span {
+    color: var(--neutral-white);
+}
+
+.author span:hover {
+    color: var(--primary-cyan-color);
+    cursor: pointer;
+}
+
+.author-info {
+    padding-top: 5px;
+}
